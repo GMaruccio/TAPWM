@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  body {
+    background: #0f1d2e;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+  }
+  h1 {
+    margin-bottom: 1rem;
+  }
+  .score {
+    background: #1f2d3e;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .escolhas {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  .escolha {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    cursor: pointer;
+    border: 5px solid;
+  }
+  .pedra {
+    border-color: #f55;
+  }
+  .papel {
+    border-color: #5bf;
+  }
+  .tesoura {
+    border-color: #fd5;
+  }
+  .resultado {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #5bf;
+    color: #000;
+  }
+  

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jo...  Ken... Po!!!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Jo...  Ken... Po!!!</h1>
+  <div class="score">Score: <span id="score">0</span></div>
+  <div class="escolhas">
+    <div class="escolha pedra" onclick="play('pedra')">✊</div>
+    <div class="escolha papel" onclick="play('papel')">✋</div>
+    <div class="escolha tesoura" onclick="play('tesoura')">✌️</div>
+  </div>
+
+  <div class="escolheu">
+    <p>Você escolheu: <span id="player">-</span></p>
+    <p>Oponente escolheu: <span id="bot">-</span></p>
+  </div>
+
+  <div class="resultado" id="resultado"></div>
+  <button onclick="resetGame()">Resetar</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
