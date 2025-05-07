@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Funções JavaScript</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Funções JS</h1>
+
+    <label for="seletor">Escolha uma função:</label>
+    <select id="seletor" onchange="mostrarFormulario()">
+      <option value="">-- Selecione --</option>
+      <option value="maior">O Maior de 3 números</option>
+      <option value="ordenar">Ordenar 3 números</option>
+      <option value="palindromo">Verificar Palíndromo</option>
+      <option value="subconjunto">Verificar Subconjunto</option>
+    </select>
+
+    <div id="formMaior" class="formulario">
+      <h2>Maior número</h2>
+      <input type="number" id="n1" placeholder="Número 1" />
+      <input type="number" id="n2" placeholder="Número 2" />
+      <input type="number" id="n3" placeholder="Número 3" />
+      <button onclick="testeMaior()">Calcular</button>
+      <p id="resultadoMaior" class="resultado"></p>
+    </div>
+
+    <div id="formOrdenar" class="formulario">
+      <h2>Ordenar números</h2>
+      <input type="number" id="ord1" placeholder="Número 1" />
+      <input type="number" id="ord2" placeholder="Número 2" />
+      <input type="number" id="ord3" placeholder="Número 3" />
+      <button onclick="testeOrdenar()">Ordenar</button>
+      <p id="resultadoOrdenar" class="resultado"></p>
+    </div>
+
+    <div id="formPalindromo" class="formulario">
+      <h2>Palíndromo</h2>
+      <input type="text" id="palavra" placeholder="Digite uma palavra ou frase" />
+      <button onclick="testePalindromo()">Verificar</button>
+      <p id="resultadoPalindromo" class="resultado"></p>
+    </div>
+
+    <div id="formSubconjunto" class="formulario">
+      <h2>Subconjunto</h2>
+      <input type="text" id="palavra1" placeholder="Digite uma palavra " />
+      <input type="text" id="palavra2" placeholder="Subpalavra" />
+      <button onclick="testeSubconjunto()">Verificar</button>
+      <p id="resultadoSubconjunto" class="resultado"></p>
+    </div>
+  </div>
+</body>
+</html>
