@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercícios de Programação</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  
+
+  <section>
+    <h2>1. Calcular Área de um Retângulo</h2>
+    <input type="number" id="base" placeholder="Base (x)">
+    <input type="number" id="altura" placeholder="Altura (y)">
+    <button onclick="calcularArea()">Calcular Área</button>
+    <div id="resultadoArea" class="resultado"></div>
+  </section>
+
+  
+  <section>
+    <h2>2. Cadastro de Conta Corrente e Poupança</h2>
+    <input id="tipoConta" placeholder="Tipo: Corrente ou Poupanca">
+    <input id="nome" placeholder="Nome do Correntista">
+    <input id="banco" placeholder="Nome do Banco">
+    <input id="numero" placeholder="Número da Conta">
+    <input id="saldo" placeholder="Saldo">
+    <input id="especial" placeholder="(Corrente: Saldo Especial) (Poupança: Juros)">
+    <input id="datavenc" placeholder="(Poupança: Data Vencimento)">
+    <button onclick="criarConta()">Criar Conta</button>
+    <div id="resultadoConta" class="resultado"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
