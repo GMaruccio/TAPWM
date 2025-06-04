@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var pessoa = new Object();
+    pessoa.nome = "giovanni";
+    pessoa.idade = 19;
+    pessoa.altura = 1.83;
+    pessoa.peso = 90;
+    alert(`${pessoa.nome} tem ${pessoa.idade} anos, pesa ${pessoa.peso} Kg e tem ${pessoa.altura} de altura.`);
+    
+    let pessoa2 = {
+        nome: "Gabriel",
+        idade: 18,
+        altura: 1.75,
+        peso: 80
+        
+    };
+    alert(`${pessoa2.nome} tem ${pessoa2.idade} anos, pesa ${pessoa2.peso} Kg e tem ${pessoa2.altura} de altura.`);
+
+    function Pessoa(nome, idade, altura, peso) {
+    this.nome = nome;
+    this.idade = idade;
+    this.altura = altura;
+    this.peso = peso;
+    }
+    const pessoa3 = new Pessoa("Luis", 18, 1.70, 70);
+    alert(`${pessoa3.nome} tem ${pessoa3.idade} anos, pesa ${pessoa3.peso} Kg e tem ${pessoa3.altura} de altura.`);
+    </script>
+</body>
+</html>
